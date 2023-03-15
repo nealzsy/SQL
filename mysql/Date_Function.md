@@ -425,8 +425,8 @@ SELECT LAST_DAY('2022-01-01 12:10:23')
     - dayofyear 인자가 1 보다 작을시 NULL 반환
 
 ```sql
-SELECT LAST_DAY('2022-01-01 12:10:23')
-		 , LAST_DAY('2022-01-32 12:10:23');
+SELECT MAKEDATE(2022, 31)
+		 , MAKEDATE(2022, 31);
 ```
 
 ![Screen_Shot_2022-04-13_at_11 11 40_AM](https://user-images.githubusercontent.com/54128055/163126795-e755c545-f909-4f19-9252-b4761efcf0bf.png)
