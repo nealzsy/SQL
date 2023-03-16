@@ -36,7 +36,7 @@ SELECT ABS(-10);
 
 ```sql
 SELECT ROUND(5.1)
-		 , ROUND(5.5);
+     , ROUND(5.5);
 ```
 
 ![Screen_Shot_2022-04-06_at_9 41 16_AM](https://user-images.githubusercontent.com/54128055/161879946-dbad8246-9252-4f9c-88a8-4fe5e69e4527.png)
@@ -46,7 +46,7 @@ SELECT ROUND(5.1)
 
 ```sql
 SELECT TRUNCATE(3.14159, 3)
-		 , ROUND(3.14159, 3);
+     , ROUND(3.14159, 3);
 ```
 
 ![Screen_Shot_2022-04-06_at_10 15 44_AM](https://user-images.githubusercontent.com/54128055/161879950-2c8cf9c7-cad2-4a0d-a4cd-b9654e804e4f.png)
@@ -73,7 +73,7 @@ SELECT FORMAT(1000000.654321, 2);
 
 ```sql
 SELECT SIGN(-10)
-		 , SIGN(0)
+     , SIGN(0)
      , SIGN(10);
 ```
 
@@ -86,7 +86,7 @@ SELECT SIGN(-10)
 
 ```sql
 SELECT EXP(5)
-		 , LN(EXP(5));
+     , LN(EXP(5));
 ```
 
 ![Screen_Shot_2022-04-06_at_10 26 24_AM](https://user-images.githubusercontent.com/54128055/161879951-4b338b26-0815-49c2-afa0-550cdb2e0099.png)
@@ -116,7 +116,7 @@ SELECT POWER(5, 2);
 
 ```sql
 SELECT SQRT(25)
-		 , SQRT(-5);
+     , SQRT(-5);
 ```
 
 ![Screen_Shot_2022-04-06_at_10 47 23_AM](https://user-images.githubusercontent.com/54128055/161879957-1d86bfbd-8f13-4155-a61a-07b9f3cde960.png)
@@ -127,7 +127,7 @@ SELECT SQRT(25)
 
 ```sql
 SELECT MOD(25, 4)
-		 , 25 MOD 4
+     , 25 MOD 4
      , 25 % 4;
 ```
 
