@@ -7,7 +7,7 @@
 
 ```sql
 SELECT LENGTH('MySQL')
-		 , LENGTH('마이에스큐엘');
+     , LENGTH('마이에스큐엘');
 ```
 
 ![Screen_Shot_2022-04-04_at_9 47 56_AM](https://user-images.githubusercontent.com/54128055/161659544-ba9b3cf0-0a67-4c76-975a-c2258907b90d.png)
@@ -19,7 +19,7 @@ SELECT LENGTH('MySQL')
 
 ```sql
 SELECT BIT_LENGTH('MySQL')
-		 , BIT_LENGTH('마이에스큐엘');
+     , BIT_LENGTH('마이에스큐엘');
 ```
 
 ![Screen_Shot_2022-04-04_at_9 48 34_AM](https://user-images.githubusercontent.com/54128055/161659551-081cf29b-650d-41f2-a0d4-2c193a257d3e.png)
@@ -29,7 +29,7 @@ SELECT BIT_LENGTH('MySQL')
 
 ```sql
 SELECT CHAR_LENGTH('MySQL')
-		 , CHAR_LENGTH('마이에스큐엘');
+     , CHAR_LENGTH('마이에스큐엘');
 ```
 
 ![Screen_Shot_2022-04-04_at_9 47 02_AM](https://user-images.githubusercontent.com/54128055/161659542-d3c2a1c3-5237-4b3c-b4f1-50bf809be974.png)
@@ -105,7 +105,7 @@ SELECT LOCATE('SQL', 'MySQL Studies');
 
 ```sql
 SELECT ASCII('A')
-		 , ASCII('a')
+     , ASCII('a')
      , CHAR(97)
      , CAST(CHAR(97) as CHAR(1));
 ```
