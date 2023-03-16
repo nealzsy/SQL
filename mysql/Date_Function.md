@@ -79,7 +79,7 @@ SELECT DATE_FORMAT('2022-01-01 12:00:00', '%y-%m-%d');
 
 ```sql
 SELECT SYSDATE()
-		 , SYSDATE() + 0 ;
+     , SYSDATE() + 0 ;
 ```
 
 ![Screen_Shot_2022-04-11_at_9 57 59_AM](https://user-images.githubusercontent.com/54128055/163126712-3ccc4a73-bc7d-4086-81ec-3698ce7ca111.png)
@@ -90,7 +90,7 @@ SELECT SYSDATE()
 
 ```sql
 SELECT CURDATE()
-		 , CURDATE() + 0;
+     , CURDATE() + 0;
 ```
 
 ![Screen_Shot_2022-04-11_at_9 52 32_AM](https://user-images.githubusercontent.com/54128055/163126706-db4e4909-a29d-4232-81d5-215b23302418.png)
@@ -101,7 +101,7 @@ SELECT CURDATE()
 
 ```sql
 SELECT CURTIME()
-	 , CURTIME() + 0;
+     , CURTIME() + 0;
 ```
 
 ![Screen_Shot_2022-04-11_at_9 55 59_AM](https://user-images.githubusercontent.com/54128055/163126711-88b53be1-8ffc-4417-9c49-2788c27c71e2.png)
@@ -181,7 +181,7 @@ SELECT MONTHNAME('2022-01-01 12:10:23');
 
 ```sql
 SELECT WEEK('2022-01-01 12:10:23')
-		 , WEEK('2022-12-31 12:10:23');
+     , WEEK('2022-12-31 12:10:23');
 ```
 
 ![Screen_Shot_2022-04-11_at_10 43 03_AM](https://user-images.githubusercontent.com/54128055/163126733-ab695865-0c80-4115-bc99-96dc87e9f429.png)
@@ -193,7 +193,7 @@ SELECT WEEK('2022-01-01 12:10:23')
 
 ```sql
 SELECT DAY('2022-01-25 12:10:23')
-		 , DAYOFMONTH('2022-01-31 12:10:23');
+     , DAYOFMONTH('2022-01-31 12:10:23');
 ```
 
 ![Screen_Shot_2022-04-11_at_10 54 29_AM](https://user-images.githubusercontent.com/54128055/163126735-d160feab-719d-4267-b0c1-3df1a6d82f9e.png)
@@ -268,8 +268,8 @@ SELECT MICROSECOND('2022-01-01 12:10:23.0004');
 
 ```sql
 SELECT QUARTER('2022-01-01 12:10:23')
-		 , QUARTER('2022-04-01 12:10:23')
-		 , QUARTER('2022-07-01 12:10:23')
+     , QUARTER('2022-04-01 12:10:23')
+     , QUARTER('2022-07-01 12:10:23')
      , QUARTER('2022-10-01 12:10:23');
 ```
 
@@ -315,7 +315,7 @@ SELECT DATE_ADD('2022-01-01 12:00:00', INTERVAL 1 DAY)
 
 ```sql
 SELECT ADDDATE('2022-01-01 12:00:00', INTERVAL 1 DAY)
-		 , ADDDATE('2022-01-01 12:00:00', 3)
+     , ADDDATE('2022-01-01 12:00:00', 3)
      , ADDDATE('2022-01-01 12:00:00', -3);
 ```
 
@@ -327,7 +327,7 @@ SELECT ADDDATE('2022-01-01 12:00:00', INTERVAL 1 DAY)
 
 ```sql
 SELECT DATE_SUB('2022-01-01 12:00:00', INTERVAL 1 DAY)
-		 , DATE_SUB('2022-01-01 12:00:00', INTERVAL -1 DAY);
+     , DATE_SUB('2022-01-01 12:00:00', INTERVAL -1 DAY);
 ```
 
 ![Screen_Shot_2022-04-13_at_9 34 44_AM](https://user-images.githubusercontent.com/54128055/163126772-be137094-8f91-4540-a987-c5700b270746.png)
@@ -338,7 +338,7 @@ SELECT DATE_SUB('2022-01-01 12:00:00', INTERVAL 1 DAY)
 
 ```sql
 SELECT SUBDATE('2022-01-01 12:00:00', INTERVAL 1 DAY)
-		 , SUBDATE('2022-01-01 12:00:00', 3)
+     , SUBDATE('2022-01-01 12:00:00', 3)
      , SUBDATE('2022-01-01 12:00:00', -3);
 ```
 
@@ -350,7 +350,7 @@ SELECT SUBDATE('2022-01-01 12:00:00', INTERVAL 1 DAY)
 
 ```sql
 SELECT DATEDIFF('2022-01-01 12:10:23', '2022-03-27')
-		 , DATEDIFF('2022-03-27', '2022-01-01');
+     , DATEDIFF('2022-03-27', '2022-01-01');
 ```
 
 ![Screen_Shot_2022-04-13_at_10 19 04_AM](https://user-images.githubusercontent.com/54128055/163126775-a3954bb1-7156-4657-a27c-695255042e9d.png)
@@ -362,7 +362,7 @@ SELECT DATEDIFF('2022-01-01 12:10:23', '2022-03-27')
 
 ```sql
 SELECT TIMESTAMPDIFF(DAY, '2022-01-01 12:10:23', '2022-03-27 12:00:00' )
-		 , TIMESTAMPDIFF(MONTH, '2022-01-01 12:10:23', '2022-03-27 12:00:00' );
+     , TIMESTAMPDIFF(MONTH, '2022-01-01 12:10:23', '2022-03-27 12:00:00' );
 ```
 
 ![Screen_Shot_2022-04-13_at_10 48 42_AM](https://user-images.githubusercontent.com/54128055/163126781-c907de48-564a-4c5e-a7cb-7ebe96623570.png)
@@ -415,7 +415,7 @@ SELECT FROM_DAYS(738521);
 
 ```sql
 SELECT LAST_DAY('2022-01-01 12:10:23')
-		 , LAST_DAY('2022-01-32 12:10:23');
+     , LAST_DAY('2022-01-32 12:10:23');
 ```
 
 ![Screen_Shot_2022-04-13_at_11 08 29_AM](https://user-images.githubusercontent.com/54128055/163126793-18ebcbea-a023-4681-b8f0-a6a14fd4a165.png)
@@ -426,7 +426,7 @@ SELECT LAST_DAY('2022-01-01 12:10:23')
 
 ```sql
 SELECT MAKEDATE(2022, 31)
-		 , MAKEDATE(2022, 31);
+     , MAKEDATE(2022, 31);
 ```
 
 ![Screen_Shot_2022-04-13_at_11 11 40_AM](https://user-images.githubusercontent.com/54128055/163126795-e755c545-f909-4f19-9252-b4761efcf0bf.png)
