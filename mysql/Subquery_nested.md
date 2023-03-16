@@ -16,7 +16,7 @@ SELECT employee_id
      , salary
 FROM employees
 WHERE (job_id, salary) IN (SELECT job_id
-																, min_salary
-												   FROM jobs)
+				, min_salary
+			   FROM jobs)
 ORDER BY 1;
 ```
