@@ -11,7 +11,7 @@
 -- job_id, salary 두 값을 동시에 비교
 -- job_id 별 최소 급여를 받는 사원이 조회됨
 SELECT employee_id
-  	 , concat(first_name, last_name)
+     , concat(first_name, last_name)
      , job_id
      , salary
 FROM employees
