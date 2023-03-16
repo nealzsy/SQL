@@ -10,12 +10,12 @@
 
 ```sql
 SELECT e.employee_id
-	   , concat(e.first_name, e.last_name)
+     , concat(e.first_name, e.last_name)
      , e.department_id
      , dept.dept_name
 FROM employees as e
 	  ,(SELECT d.department_id
-						,d.department_name as dept_name
+		  ,d.department_name as dept_name
 	    FROM departments d) dept
 WHERE e.department_id = dept.department_id
 ORDER BY 1;
@@ -26,14 +26,14 @@ ORDER BY 1;
 ```sql
 -- LATERAL 사용시 서브쿼리 내에서 메인쿼리(혹은 쿼리내 다른 서브쿼리)와 조인 가능
 SELECT e.employee_id
-	   , concat(e.first_name, e.last_name)
+     , concat(e.first_name, e.last_name)
      , e.department_id
      , dept.dept_name
 FROM employees as e
-	   ,LATERAL
+   , LATERAL
      (SELECT d.department_id
-						,d.department_name as dept_name
-	    FROM departments d
+	   , d.department_name as dept_name
+      FROM departments d
       WHERE d.department_id = e.department_id) dept
 ORDER BY 1;
 ```
