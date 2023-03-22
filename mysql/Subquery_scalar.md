@@ -11,7 +11,7 @@
 
 ```sql
 SELECT e.employee_id
-	 , concat(e.first_name, e.last_name) emp_name
+     , concat(e.first_name, e.last_name) emp_name
      , e.department_id
      , (SELECT d.department_id
         FROM departments as d
@@ -25,7 +25,7 @@ ORDER BY 1;
 ```sql
 -- 메인쿼리와 조인을 하지 않은 경우 예시
 SELECT e.employee_id
-	 , concat(e.first_name, e.last_name) emp_name
+     , concat(e.first_name, e.last_name) emp_name
      , e.department_id
      , (SELECT d.department_id
         FROM departments as d) dept_name
@@ -40,9 +40,9 @@ Error Code: 1242. Subquery returns more than 1 row
 ```sql
 -- job_title, job_id 두 컬럼을 사용하지만, 문자열 결합으로 최종 반환 값은 1개
 SELECT e.employee_id
-		 , concat(e.first_name, e.last_name)
+     , concat(e.first_name, e.last_name)
      , (SELECT concat(j.job_title, '(', j.job_id, ')')
-				FROM jobs j
+	FROM jobs j
         WHERE e.job_id = j.job_id) job_names
 FROM employees as e
 ORDER BY 1;
@@ -53,10 +53,10 @@ ORDER BY 1;
 ```sql
 -- 건수는 1건을 가져오지만, 두 개의 컬럼 값을 가져오므로 오류
 SELECT e.employee_id
-		 , concat(e.first_name, e.last_name) emp_name
+     , concat(e.first_name, e.last_name) emp_name
      , e.department_id
      , (SELECT d.department_id
-						 , d.location_id
+     , d.location_id
         FROM departments as d) dept_name
 FROM employees as e
 ORDER BY 1;
